@@ -17,8 +17,7 @@ public class Main {
                 if (Sort.isEqual(sortArr[j],num)) {
                     num_id = j;
                     num = sortArr[j];
-                }
-            }
+                }}
             sortArr[num_id] = sortArr[i];
             sortArr[i] = num;
         }
@@ -37,10 +36,8 @@ public class Main {
         switch (input){
             case 1 -> selectionSort(nums, OperationSort::sortAscend);
             case 2 -> selectionSort(nums, OperationSort::sortDescend);
-            default -> {
-                System.out.println("Error");
-                for (int j : nums) {
-                    System.out.print(j + " ");
-                }
-            }
-        }}}
+            default -> System.out.println("Error");
+        }
+            for (int j : nums) {
+                System.out.print(j + " ");
+}}}
